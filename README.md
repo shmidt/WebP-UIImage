@@ -1,4 +1,34 @@
 WebP-UIImage
 ============
 
-UIImage category to work with WebP image files in iOS.
+<code>UIImage</code> category to work with <code>WebP</code> image files in iOS.
+
+## Installation ##
+
+Drag and drop the <code>Classes</code> folder and <code>WebP.framework</code> into your project.
+
+## Usage ##
+
+Getting started with <code>WebP-UIImage</code> is simple. 
+Import framework #import <code>"UIImage+WebP.h"</code> and call following methods:
+
+```objc
+- (NSData *)dataWebPWithQuality:(float)quality;//quality = 0..100
++ (UIImage*)imageWithWebPAtPath:(NSString *)filePath;
+
++ (UIImage *)imageWithWebPData:(NSData *)imgData;
+@property (nonatomic, readonly) NSData *dataWebPLossless;
+
+- (BOOL)writeWebPToDocumentsWithFileName:(NSString *)filename quality:(float)quality;
+- (BOOL)writeWebPLosslessToDocumentsWithFileName:(NSString *)filename;
+```
+
+## Thanks ##
+The project is heavily based on [<code>nyteshade/iOSWebPWithAlphaExample</code>](https://github.com/nyteshade/iOSWebPWithAlphaExample)
+
+## License ##
+MIT
+
+## Tests ##
+No speed/size tests were done. You can make your own and commit it here.
+
