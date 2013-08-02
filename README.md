@@ -10,7 +10,7 @@ Drag and drop the <code>Classes</code> folder and <code>WebP.framework</code> in
 ## Usage ##
 
 Getting started with <code>WebP-UIImage</code> is simple. 
-Import framework #import <code>"UIImage+WebP.h"</code> and call following methods:
+Import framework <code>#import "UIImage+WebP.h"</code> and call following methods:
 
 ```objc
 - (NSData *)dataWebPWithQuality:(float)quality;//quality = 0..100
