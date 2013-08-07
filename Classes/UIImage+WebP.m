@@ -70,7 +70,9 @@ static void free_image_data(void *info, const void *data, size_t size)
 
   return [self imageWithWebPData:imgData];
 }
-+ (UIImage *)imageWithWebPData:(NSData *)imgData{    
++ (UIImage *)imageWithWebPData:(NSData *)imgData{
+    int rc = WebPGetDecoderVersion();
+    NSLog(@"WebP decoder version: %d", rc);
     // Get width and height of the selected WebP image
     int width = 0, height = 0;
     WebPGetInfo(imgData.bytes, imgData.length, &width, &height);
@@ -101,6 +103,9 @@ static void free_image_data(void *info, const void *data, size_t size)
 }
 
 - (NSData *)dataWebPWithQuality:(float)quality{
+    int rc = WebPGetEncoderVersion();
+    NSLog(@"WebP encoder version: %d", rc);
+    
     CGImageRef imageRef = self.CGImage;
     CGColorSpaceRef colorSpace = CGImageGetColorSpace(imageRef);
     if (CGColorSpaceGetModel(colorSpace) != kCGColorSpaceModelRGB) {

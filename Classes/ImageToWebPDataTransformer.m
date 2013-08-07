@@ -25,7 +25,7 @@
     if ([value isKindOfClass:NSData.class])
         return value;
     
-    return [(UIImage *)value dataWebPWithQuality:100];
+    return [(UIImage *)value dataWebPWithQuality:75];//75 is default by Google
 }
 
 - (id)reverseTransformedValue:(id)value

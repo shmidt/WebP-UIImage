@@ -17,13 +17,13 @@
 		00B6847F16F53E61002EA9EE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00B6847E16F53E61002EA9EE /* Default@2x.png */; };
 		00B6848116F53E61002EA9EE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00B6848016F53E61002EA9EE /* Default-568h@2x.png */; };
 		00B6848A16F53E61002EA9EE /* NEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B6848916F53E61002EA9EE /* NEViewController.m */; };
-		00B6849316F53E7A002EA9EE /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B6849216F53E7A002EA9EE /* WebP.framework */; };
 		00B6849B16F548C1002EA9EE /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B6849516F53E81002EA9EE /* UIImage+WebP.m */; };
 		00B6849E16F549EB002EA9EE /* background0.webp in Resources */ = {isa = PBXBuildFile; fileRef = 00B6849C16F5496E002EA9EE /* background0.webp */; };
 		00B6849F16F549ED002EA9EE /* layer0.webp in Resources */ = {isa = PBXBuildFile; fileRef = 00B6849D16F5496E002EA9EE /* layer0.webp */; };
 		D04F119E17ABA17D0012B476 /* ImageToWebPDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = D04F119D17ABA17D0012B476 /* ImageToWebPDataTransformer.m */; };
 		D04F11A417ABA3D50012B476 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D04F11A017ABA3D50012B476 /* iPad.storyboard */; };
 		D04F11A517ABA3D50012B476 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D04F11A217ABA3D50012B476 /* iPhone.storyboard */; };
+		D04F11A717ABEEDA0012B476 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04F11A617ABEEDA0012B476 /* WebP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +42,6 @@
 		00B6848016F53E61002EA9EE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		00B6848816F53E61002EA9EE /* NEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NEViewController.h; sourceTree = "<group>"; };
 		00B6848916F53E61002EA9EE /* NEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NEViewController.m; sourceTree = "<group>"; };
-		00B6849216F53E7A002EA9EE /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
 		00B6849416F53E81002EA9EE /* UIImage+WebP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
 		00B6849516F53E81002EA9EE /* UIImage+WebP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
 		00B6849C16F5496E002EA9EE /* background0.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = background0.webp; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		D04F119D17ABA17D0012B476 /* ImageToWebPDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageToWebPDataTransformer.m; sourceTree = "<group>"; };
 		D04F11A117ABA3D50012B476 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPad.storyboard; sourceTree = "<group>"; };
 		D04F11A317ABA3D50012B476 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone.storyboard; sourceTree = "<group>"; };
+		D04F11A617ABEEDA0012B476 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 				00B6846B16F53E60002EA9EE /* UIKit.framework in Frameworks */,
 				00B6846D16F53E60002EA9EE /* Foundation.framework in Frameworks */,
 				00B6846F16F53E60002EA9EE /* CoreGraphics.framework in Frameworks */,
-				00B6849316F53E7A002EA9EE /* WebP.framework in Frameworks */,
+				D04F11A717ABEEDA0012B476 /* WebP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +71,7 @@
 		00B6845E16F53E60002EA9EE = {
 			isa = PBXGroup;
 			children = (
+				D04F11A617ABEEDA0012B476 /* WebP.framework */,
 				00B6847016F53E60002EA9EE /* iOS WebP Alpha Example */,
 				00B6846916F53E60002EA9EE /* Frameworks */,
 				00B6846816F53E60002EA9EE /* Products */,
@@ -88,7 +89,6 @@
 		00B6846916F53E60002EA9EE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				00B6849216F53E7A002EA9EE /* WebP.framework */,
 				00B6846A16F53E60002EA9EE /* UIKit.framework */,
 				00B6846C16F53E60002EA9EE /* Foundation.framework */,
 				00B6846E16F53E60002EA9EE /* CoreGraphics.framework */,
