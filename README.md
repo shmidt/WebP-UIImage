@@ -23,6 +23,11 @@ Import framework <code>#import "UIImage+WebP.h"</code> and call following method
 - (BOOL)writeWebPLosslessToDocumentsWithFileName:(NSString *)filename;
 ```
 
+## Bonus ##
+I made also an <code>NSValueTransformer</code> subclass called <code>ImageToWebPDataTransformer</code>.
+You can use it in CoreData to store images with less sizes than jpeg.
+I use 75 quality value as it is default Google value. 
+
 ## Thanks ##
 The project is heavily based on [<code>nyteshade/iOSWebPWithAlphaExample</code>](https://github.com/nyteshade/iOSWebPWithAlphaExample)
 
